@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "GoodTime";
+  src: url("../public/fonts/GoodTime.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "KoraTaki";
+  src: url("../public/fonts/KoraTaki Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GoodTime Light";
+  src: url("../public/fonts/SuperBrigade.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
