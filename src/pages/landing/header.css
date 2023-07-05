@@ -1,0 +1,255 @@
+.heading-container {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.video-element {
+  height: 1000px;
+  width: 110%;
+  display: flex;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+.video-overlay {
+  width: 100vw;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 70%,
+    rgb(0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.sub-header {
+  position: absolute;
+  display: flex;
+  top: 340px;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.floating-animate {
+  animation: float3 5s ease-in-out infinite;
+}
+@keyframes float3 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInBottomLeft {
+  from {
+    opacity: 0;
+    transform: translateY(10px) translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInBottomRight {
+  from {
+    opacity: 0;
+    transform: translateY(10px) translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+.text-animate {
+  > h2 {
+    animation: fadeInTop 1s ease-in-out;
+  }
+
+  > h1, > h3 {
+    animation: fadeInBottomLeft 1s ease-in-out;
+  }
+
+  + .doja-cat {
+    animation: fadeInBottomRight 1s ease-in-out;
+  }
+}
+
+.header-titles > h1 {
+  color: white;
+  font-size: 130px;
+  font-family: Super Brigade;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 500ms;
+}
+.header-titles > h3 {
+  color: white;
+  font-size: 130px;
+  font-family: Super Brigade;
+  text-align: left;
+  margin-left: -40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 500ms;
+}
+
+.header-titles > h2 {
+  color: white;
+  font-size: 55px;
+  margin-left: 40px;
+  font-family: Super Brigade;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 500ms;
+}
+
+.doja-cat {
+  width: 350px;
+  margin-left: -300px;
+  margin-top: 140px;
+  transition: all 500ms;
+}
+
+@media (max-width: 69em) {
+  .header-titles {
+    > h2 {
+      font-size: 45px;
+    }
+    > h1 {
+      font-size: 90px;
+    }
+    > h3 {
+      font-size: 98px;
+    }
+  }
+
+  .doja-cat {
+    width: 280px;
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 50em) {
+  .header-titles {
+    > h2 {
+      font-size: 35px;
+    }
+    > h1 {
+      font-size: 78px;
+    }
+    > h3 {
+      font-size: 90px;
+    }
+  }
+
+  .doja-cat {
+    width: 240px;
+    margin-left: -220px;
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 40em) {
+  .header-titles {
+    > h2 {
+      font-size: 29px;
+      margin-left: 20px;
+    }
+    > h1 {
+      font-size: 65px;
+    }
+    > h3 {
+      font-size: 70px;
+      margin-left: -30px;
+    }
+  }
+
+  .doja-cat {
+    width: 200px;
+    margin-left: -210px;
+    margin-top: 110px;
+  }
+  .sub-header {
+    margin-left: 10px;
+    top: 280px;
+  }
+  .video-element, .video-overlay, .heading-container {
+    height: 800px;
+  }
+}
+
+@media (max-width: 33em) {
+  .header-titles {
+    > h2 {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    > h1 {
+      font-size: 47px;
+    }
+    > h3 {
+      font-size: 53px;
+      margin-left: -15px;
+    }
+  }
+  .doja-cat {
+    width: 155px;
+    margin-left: -130px;
+    margin-top: 50px;
+  }
+  .video-element, .video-overlay, .heading-container {
+    height: 650px;
+  }
+}
+
+@media (max-width: 22em) {
+  .header-titles {
+    > h2 {
+      font-size: 16px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    > h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    > h3 {
+      font-size: 45px;
+      margin-left: -15px;
+    }
+  }
+  .doja-cat {
+    width: 125px;
+    margin-left: -100px;
+    margin-top: 50px;
+  }
+  .sub-header {
+    top: 250px;
+  }
+  .video-element, .video-overlay, .heading-container {
+    height: 600px;
+  }
+}

@@ -1,0 +1,343 @@
+/* ENTIRE THING */
+.album-container {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.moon1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 100px;
+  left: -100px;
+  width: 150px;
+  opacity: 0.4;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.3));
+  animation: semi-circle-animation 190s linear infinite;
+}
+.moon2 {
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  left: -100px;
+  width: 150px;
+  opacity: 0.4;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.3));
+  animation: flipped-semi-circle-animation 190s linear infinite;
+}
+@keyframes semi-circle-animation {
+  0%,
+  100% {
+    transform: translateX(-5vw) translateY(0);
+  }
+  10% {
+    transform: translateX(10vw) translateY(-40vh);
+  }
+  20% {
+    transform: translateX(35vw) translateY(-70vh);
+  }
+  30% {
+    transform: translateX(60vw) translateY(-70vh);
+  }
+  40% {
+    transform: translateX(85vw) translateY(-40vh);
+  }
+  50% {
+    transform: translateX(105vw) translateY(0);
+  }
+  60% {
+    transform: translateX(85vw) translateY(-40vh);
+  }
+  70% {
+    transform: translateX(60vw) translateY(-70vh);
+  }
+  80% {
+    transform: translateX(35vw) translateY(-70vh);
+  }
+  90% {
+    transform: translateX(10vw) translateY(-40vh);
+  }
+}
+
+@keyframes flipped-semi-circle-animation {
+  0%,
+  100% {
+    transform: translateX(105vw) translateY(0);
+  }
+  10% {
+    transform: translateX(85vw) translateY(40vh);
+  }
+  20% {
+    transform: translateX(60vw) translateY(70vh);
+  }
+  30% {
+    transform: translateX(35vw) translateY(70vh);
+  }
+  40% {
+    transform: translateX(10vw) translateY(40vh);
+  }
+  50% {
+    transform: translateX(-10vw) translateY(0);
+  }
+  60% {
+    transform: translateX(10vw) translateY(40vh);
+  }
+  70% {
+    transform: translateX(35vw) translateY(70vh);
+  }
+  80% {
+    transform: translateX(60vw) translateY(70vh);
+  }
+  90% {
+    transform: translateX(85vw) translateY(40vh);
+  }
+}
+
+.albums-header {
+  font-size: 40px;
+  font-family: Super Brigade;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 100px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.albums-header:hover {
+  transform: scale(1.05);
+}
+
+/* HIGHLIGHT */
+.album-container > main {
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  z-index: 0;
+}
+.highlight-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+  margin-left: 40px;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: transform 500ms;
+}
+.side-thang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.shifter {
+  margin-left: -80px;
+}
+.highlight-album:hover {
+  transform: translateY(-10px);
+}
+.highlight-album > img {
+  width: 550px;
+  outline: 2px solid white;
+}
+.highlight-album h2 {
+  font-family: Super Brigade;
+  color: white;
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 70%;
+  text-align: center;
+}
+@keyframes sparkle-animation {
+  0% {
+    text-shadow: none;
+  }
+  40% {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8),
+      0 0 20px rgba(255, 166, 0, 0.8), 0 0 30px rgba(255, 55, 0, 0.803);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+.highlight-album:hover h2 {
+  animation: sparkle-animation linear 2s;
+}
+.highlight-album p {
+  font-family: GoodTime;
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/* SIDE BAR */
+.album-container > main > aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.side-album {
+  display: flex;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: transform 500ms;
+}
+.side-album:hover {
+  transform: translateY(-5px);
+}
+.side-album:hover > .side-text > h2 {
+  animation: sparkle-animation linear 2s;
+}
+
+.side-album > img {
+  width: 200px;
+  outline: 2px solid white;
+}
+.side-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  margin-left: 30px;
+}
+.side-text > h2 {
+  font-size: 35px;
+  font-family: Super Brigade;
+  width: 360px;
+}
+.side-text > p {
+  font-size: 18px;
+  font-family: GoodTime;
+  line-height: 30px;
+  width: 360px;
+}
+
+@media (max-width: 89em) {
+  .album-container > main > aside {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .highlight-album {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 38rem) and (max-width: 69em) {
+  .album-container > main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlight-album {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    > img {
+      width: 200px;
+    }
+  }
+  .side-thang {
+    margin-left: 30px;
+    > p {
+      text-align: left;
+      font-size: 18px;
+      line-height: 30px;
+      width: 360px;
+    }  
+    > h2 {
+      text-align: left;
+      font-size: 35px;
+      width: 360px;
+    }
+  }
+
+  
+}
+
+@media (max-width: 38em) {
+  .albums-header {
+    font-size: 30px;
+    width: 100vw;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .album-container > main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlight-album, .shifter {
+    margin: 0;
+    padding: 0;
+    > img {
+      width: 300px;
+    }
+  }
+  .side-thang {
+    margin-bottom: 40px;
+    > h2 {
+      font-size: 25px;
+      text-align: center;
+      width: 70vw;
+      margin-bottom: 10px;
+    }
+    > p {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      width: 70vw;
+    }
+  }
+  .side-album {
+    flex-direction: column;
+    align-items: center;
+    > img {
+      width: 300px;
+    }
+  }
+  .side-text {
+    margin: 0;
+    margin-top: 20px;
+    > h2 {
+      font-size: 25px;
+      text-align: center;
+      width: 70vw;
+      margin-bottom: 10px;
+    }
+    > p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+      width: 70vw;
+    }
+
+  }
+}
+
+@media (max-width: 30em) {
+  .albums-header {
+    font-size: 25px;
+  }
+  .side-thang, .side-text {
+    > h2 {
+      font-size: 20px;
+    }
+    > p {
+      font-size: 12px;
+    }
+  }
+  .side-album, .highlight-album {
+    > img {
+      width: 250px;
+    }
+  }
+}

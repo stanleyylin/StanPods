@@ -1,0 +1,226 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments > h2 {
+  color: white;
+  font-family: Super Brigade;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.post-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post-comment input {
+  width: 500px;
+  height: 30px;
+  padding: 10px;
+  color: white;
+  outline: 2px solid white;
+  font-family: GoodTime;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.post-comment textarea {
+  width: 550px;
+  margin-top: 30px;
+  padding: 15px;
+  color: white;
+  outline: 2px solid white;
+  font-family: GoodTime;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.post-comment input::placeholder,
+.post-comment textarea::placeholder {
+  color: rgba(255, 255, 255, 0.762);
+}
+
+.post-comment button {
+  width: 130px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  font-family: GoodTime;
+  transition: all 500ms;
+  cursor: pointer;
+
+  background-color: white;
+  outline: none;
+  color: black;
+}
+.post-comment button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  outline: 2px solid white;
+  color: white;
+}
+
+.loc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.comment {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: GoodTime;
+  margin-top: 20px;
+  width: 60vw;
+  max-width: 800px;
+}
+
+.comment > h4 {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 1px;
+}
+
+.comment > h4::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-image: url("../res/astronaut.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.comment > p {
+  color: rgb(36, 36, 36);
+  padding-left: 45px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+}
+
+.be-the-first {
+  color: white;
+  font-family: goodtime;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 40em) {
+  .post-comment input {
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .post-comment textarea {
+    width: 450px;
+    font-size: 13px;
+  }
+  .comment {
+    padding: 10px;
+    font-family: GoodTime;
+    margin-top: 20px;
+  }
+  
+  .comment > h4 {
+    font-size: 14px;
+  }
+  .comment > p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  
+  .comment > h4::before {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 35em) {
+  .comments > h2 {
+    font-size: 30px;
+  }
+  .post-comment input {
+    width: 280px;
+    height: 30px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .post-comment textarea {
+    width: 300px;
+    font-size: 12px;
+  }
+  .comment {
+    padding: 10px;
+    font-family: GoodTime;
+    margin-top: 20px;
+    width: 70vw;
+    min-width: 0px;
+  }
+  
+  .comment > h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .comment > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .comment > h4::before {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 30em) {
+  .comments > h2 {
+    font-size: 24px;
+  }
+  .post-comment input {
+    width: 75vw;
+    height: 28px;
+    font-size: 11px;
+  }
+  .post-comment textarea {
+    width: 80vw;
+    font-size: 12px;
+  }
+  .comment {
+    padding: 10px;
+    font-family: GoodTime;
+    margin-top: 20px;
+    width: 80vw;
+    min-width: 0px;
+  }
+  
+  .comment > h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .comment > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .comment > h4::before {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}

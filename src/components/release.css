@@ -1,0 +1,135 @@
+.album-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.album-box:hover {
+  transform: translateY(-10px);
+}
+
+.album-box > img {
+  transition: all 500ms;
+  width: 400px;
+  height: 400px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-info > h2 {
+  color: white;
+  font-family: Super Brigade;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.album-box:hover .text-sparkle {
+  animation: sparkle-animation linear 2s;
+}
+
+@keyframes sparkle-animation {
+  0% {
+    text-shadow: none;
+  }
+  40% {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8),
+      0 0 20px rgba(255, 166, 0, 0.8), 0 0 30px rgba(255, 55, 0, 0.803);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.album-info > p {
+  color: white;
+  font-family: GoodTime;
+  text-align: center;
+  font-size: 20px;
+  width: 350px;
+  margin-bottom: 5px;
+}
+
+.categorical > p {
+  color: rgb(255, 168, 69);
+  font-family: GoodTime;
+}
+
+@media (max-width: 75em) {
+  .album-box > img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 55em) {
+  .album-box > img {
+    width: 300px;
+    height: 300px;
+  }
+  .album-box {
+    height: 500px;
+  }
+}
+
+@media (max-width: 45em) {
+  .album-info > h2 {
+    font-size: 35px;
+  }
+  .album-info > p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 35em) {
+  .album-info > h2 {
+    font-size: 30px;
+  }
+  .album-info > p {
+    font-size: 16px;
+  }
+  .album-box {
+    height: 450px;
+  }
+  .album-box > img {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media (max-width: 30em) {
+  .album-info > h2 {
+    font-size: 28px;
+    width: 90vw;
+  }
+  .album-info > p {
+    font-size: 15px;
+    width: 90vw;
+  }
+  .album-box > img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 25em) {
+  .album-info > h2 {
+    font-size: 26px;
+  }
+  .album-info > p {
+    font-size: 15px;
+    
+  }
+  .album-box > img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
