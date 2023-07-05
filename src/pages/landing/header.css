@@ -121,6 +121,24 @@
     height: 900px;
   }
   .sub-header {
-    top: 280px;
+    top: 300px;
+  }
+}
+
+@media (max-width: 35em) {
+  .video-element, .video-overlay, .heading-container {
+    height: 850px;
+  }
+  .sub-header {
+    top: 320px;
+  }
+}
+
+@media (max-width: 30em) {
+  .video-element, .video-overlay, .heading-container {
+    height: 730px;
+  }
+  .sub-header {
+    top: 290px;
   }
 }

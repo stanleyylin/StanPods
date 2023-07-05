@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className='heading-container'>
       <div>
-        <video autoPlay loop muted playsinline className='video-element'>
+        <video autoplay loop muted playsinline className='video-element'>
           <source src={video} type='video/mp4' />
         </video>
         <div className='video-overlay'></div>   
@@ -90,16 +90,27 @@ const TextBox = styled.div`
       margin-left: 30px;
     }
   }
-  @media (max-width: 28em) {
+  @media (max-width: 30em) {
     > h1, > h3 {
       font-size: 50px;
-      color: yellow;
     }
     > h3 {
       margin-left: -20px;
     }
     > h2 {
       font-size: 17px;
+    }
+  }
+  @media (max-width: 25em) {
+    > h1, > h3 {
+      font-size: 45px;
+    }
+    > h3 {
+      margin-left: -10px;
+    }
+    > h2 {
+      margin-left: 15px;
+      font-size: 15px;
     }
   }
 `
@@ -124,6 +135,17 @@ const DojaCat = styled.img`
     width: 160px;
     margin-top: 80px;
     margin-left: -90px;
+  }
+  @media (max-width: 30em) {
+    width: 130px;
+    margin-top: 80px;
+    margin-left: -90px;
+  }
+  @media (max-width: 25em) {
+    width: 120px;
+    margin-top: 50px;
+    margin-left: -70px;
+    margin-right: -20px;
   }
 `
 export default Header
