@@ -19,13 +19,13 @@ const Header = () => {
 
       <div className={`sub-header ${inView ? 'floating-animate' : ''}`} ref={ref}>
         <div className={`header-titles ${inView ? 'text-animate' : ''}`} ref={ref}>
-          <h2> 
+          <h2 className='hut1'> 
             YOU ARE LISTENING TO
           </h2>
-          <h1>
+          <h1 className='hut2'>
             STAN
           </h1>
-          <h3>
+          <h3 className='bigbutt'>
             PODS
           </h3>
         </div>
