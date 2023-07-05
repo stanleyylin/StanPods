@@ -93,14 +93,10 @@
     height: 500px;
   }
   .album-header-title {
-    font-size: 40px;
-  }
-}
-@media (max-width: 40em) {
-  .album-header-title {
     font-size: 35px;
   }
 }
+
 @media (max-width: 35em) {
   .album-header-title {
     font-size: 30px;
