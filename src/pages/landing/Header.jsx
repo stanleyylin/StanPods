@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className='heading-container'>
       <div>
-        <video autoPlay loop muted className='video-element'>
+        <video autoPlay loop muted playsinline className='video-element'>
           <source src={video} type='video/mp4' />
         </video>
         <div className='video-overlay'></div>   

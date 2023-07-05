@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e47e39d1.css",
+    "main.js": "/static/js/main.ca913c6f.js",
+    "static/media/tunnel.mp4": "/static/media/tunnel.f6576f342f58e9568700.mp4",
+    "static/media/header-bg.mp4": "/static/media/header-bg.808034c0830046f53518.mp4",
+    "static/media/moon.png": "/static/media/moon.2ef1044e8ff7b6a0b2e4.png",
+    "static/media/KoraTaki Regular.ttf": "/static/media/KoraTaki Regular.e13b3d3c2a2a38b012fe.ttf",
+    "static/media/astronaut-full.webp": "/static/media/astronaut-full.58f366abc7a514aa33e1.webp",
+    "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.8a2aa304d0bd5e41d186.ttf",
+    "static/media/github.png": "/static/media/github.3ec61b93854178c47369.png",
+    "static/media/SpaceMono-Bold.ttf": "/static/media/SpaceMono-Bold.056ac3ebe5f65cb5c4ac.ttf",
+    "static/media/Product Sans Bold.ttf": "/static/media/Product Sans Bold.53df38d5491afbeb42a5.ttf",
+    "static/media/Product Sans Regular.ttf": "/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
+    "static/media/SuperBrigade.otf": "/static/media/SuperBrigade.9d9e4acb9e78ed8c915c.otf",
+    "static/media/logo.png": "/static/media/logo.4e63aad42ac74bbbc181.png",
+    "static/media/astronaut.png": "/static/media/astronaut.ed66b3f23ffa4d9e6a70.png",
+    "static/media/GoodTime.otf": "/static/media/GoodTime.a86d4f7f5cdb8cf2e409.otf",
+    "static/media/right-airpod.webp": "/static/media/right-airpod.9255bf844e0e59174877.webp",
+    "static/media/left-airpod.webp": "/static/media/left-airpod.d97f074faf4b178188f2.webp",
+    "static/media/linkedin.png": "/static/media/linkedin.ac689c2459a4b86a8566.png",
+    "index.html": "/index.html",
+    "main.e47e39d1.css.map": "/static/css/main.e47e39d1.css.map",
+    "main.ca913c6f.js.map": "/static/js/main.ca913c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e47e39d1.css",
+    "static/js/main.ca913c6f.js"
+  ]
+}

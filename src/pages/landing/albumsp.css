@@ -219,7 +219,7 @@
   width: 360px;
 }
 
-@media (max-width: 89em) {
+@media (max-width: 1424px) {
   .album-container > main > aside {
     margin-left: 10px;
     margin-right: 10px;
@@ -231,7 +231,9 @@
   }
 }
 
-@media (min-width: 38rem) and (max-width: 69em) {
+
+
+@media (max-width: 1000px) {
   .album-container > main {
     flex-direction: column;
     align-items: center;
@@ -259,11 +261,10 @@
       width: 360px;
     }
   }
-
   
 }
 
-@media (max-width: 38em) {
+@media (max-width: 680px) {
   .albums-header {
     font-size: 30px;
     width: 100vw;
@@ -278,9 +279,12 @@
   .highlight-album, .shifter {
     margin: 0;
     padding: 0;
-    > img {
+    img {
       width: 300px;
     }
+  }
+  .highlight-album {
+    flex-direction: column;
   }
   .side-thang {
     margin-bottom: 40px;
@@ -323,7 +327,7 @@
   }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 480px) {
   .albums-header {
     font-size: 25px;
   }
@@ -333,6 +337,27 @@
     }
     > p {
       font-size: 12px;
+    }
+  }
+  .side-album, .highlight-album {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .albums-header {
+    font-size: 25px;
+  }
+  .side-thang, .side-text {
+    > h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+    > p {
+      font-size: 12px;
+      text-align: center;
     }
   }
   .side-album, .highlight-album {

@@ -14,7 +14,7 @@ const Info = () => {
   return (
     <div className={`infos ${inView ? 'zoom-out' : ''}`} ref={ref}>
       <div>
-        <video autoPlay loop muted className='video-element1'>
+        <video autoPlay loop muted playsinline className='video-element1'>
             <source src={tunnel} type='video/mp4' />
           </video>
         <div className='video-overlay1'></div>     
