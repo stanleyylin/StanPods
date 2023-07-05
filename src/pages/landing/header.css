@@ -133,11 +133,7 @@
   transition: all 500ms;
 }
 
-@media screen (max-width: 35rem) {
-  .hut1 {
-    color: red;
-  }
-}
+
 @media (max-width: 1104px) {
   .header-titles {
     > h2 {
@@ -240,16 +236,17 @@
       margin-bottom: 10px;
     }
     h1 {
-      font-size: 40px;
+      font-size: 35px;
       margin-bottom: 5px;
     }
     h3 {
-      font-size: 45px;
+      font-size: 40px;
       margin-left: -15px;
+      color: red;
     }
   }
   .doja-cat {
-    width: 125px;
+    width: 1005px;
     margin-left: -100px;
     margin-top: 50px;
     
