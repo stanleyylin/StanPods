@@ -98,33 +98,7 @@
   }
 }
 
-.header-titles > h1 {
-  color: white;
-  font-size: 130px;
-  font-family: Super Brigade;
-  text-align: left;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transition: all 500ms;
-}
-.header-titles > h3 {
-  color: white;
-  font-size: 130px;
-  font-family: Super Brigade;
-  text-align: left;
-  margin-left: -40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transition: all 500ms;
-}
 
-.header-titles > h2 {
-  color: white;
-  font-size: 55px;
-  margin-left: 40px;
-  font-family: Super Brigade;
-  text-align: left;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transition: all 500ms;
-}
 
 .doja-cat {
   width: 350px;
@@ -133,4 +107,20 @@
   transition: all 500ms;
 }
 
+@media (max-width: 69em) {
+  .video-element, .video-overlay, .heading-container {
+    height: 950px;
+  }
+  .sub-header {
+    top: 300px;
+  }
+}
 
+@media (max-width: 45em) {
+  .video-element, .video-overlay, .heading-container {
+    height: 900px;
+  }
+  .sub-header {
+    top: 280px;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import header_box from '../../res/header-box.png';
 import video from '../../res/header-bg.mp4';
+import styled from '@emotion/styled';
 import './header.css';
 
 const Header = () => {
@@ -18,25 +19,111 @@ const Header = () => {
       </div>
 
       <div className={`sub-header ${inView ? 'floating-animate' : ''}`} ref={ref}>
-        <div className={`header-titles ${inView ? 'text-animate' : ''}`} ref={ref}>
-          <h2 className='hut1'> 
+        <TextBox 
+          className={inView ? 'text-animate' : ''} 
+          ref={ref}
+        >
+          <h2> 
             YOU ARE LISTENING TO
           </h2>
-          <h1 className='hut2'>
+          <h1>
             STAN
           </h1>
-          <h3 className='bigbutt'>
+          <h3>
             PODS
           </h3>
-        </div>
+        </TextBox>
 
-        <img 
+        <DojaCat 
           src={header_box} 
           alt="Music Blog built by Stanley Lin"
-          className='doja-cat'/>
+        />
       </div>
     </header>
   )
 }
 
+const TextBox = styled.div`
+  color: white;
+  font-family: Super Brigade;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 500ms;
+  > h1 {
+    font-size: 130px;
+  }
+  > h3 {
+    font-size: 130px;
+    margin-left: -40px;
+  }
+
+  > h2 {
+    font-size: 55px;
+    margin-left: 40px;
+  }
+
+  @media (max-width: 69em) {
+    > h1, > h3 {
+      font-size: 90px;
+    }
+    > h2 {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 45em) {
+    > h1, > h3 {
+      font-size: 70px;
+    }
+    > h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 35em) {
+    > h1, > h3 {
+      font-size: 60px;
+    }
+    > h3 {
+      margin-left: -30px;
+    }
+    > h2 {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 28em) {
+    > h1, > h3 {
+      font-size: 50px;
+      color: yellow;
+    }
+    > h3 {
+      margin-left: -20px;
+    }
+    > h2 {
+      font-size: 17px;
+    }
+  }
+`
+
+const DojaCat = styled.img`
+  width: 350px;
+  margin-left: -300px;
+  margin-top: 140px;
+  transition: all 500ms;
+
+  @media (max-width: 69em) {
+    width: 250px;
+    margin-left: -200px;
+  }
+
+  @media (max-width: 45em) {
+    width: 200px;
+    margin-left: -150px;
+    margin-top: 120px;
+  }
+  @media (max-width: 35em) {
+    width: 160px;
+    margin-top: 80px;
+    margin-left: -90px;
+  }
+`
 export default Header
