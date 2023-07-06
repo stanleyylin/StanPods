@@ -1,7 +1,7 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import header_box from '../../res/header-box.png';
-import video from '../../res/header-bg.mp4';
+import video from '../../res/headerbg.mp4';
 import styled from '@emotion/styled';
 import './header.css';
 
