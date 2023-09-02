@@ -12,6 +12,7 @@
   position: absolute;
   z-index: 0;
 }
+
 .video-overlay {
   width: 100vw;
   height: 1000px;

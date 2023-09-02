@@ -5,6 +5,7 @@ import video from '../../res/headerbg.mp4';
 import styled from '@emotion/styled';
 import './header.css';
 
+
 const Header = () => {
   const { ref, inView } = useInView({
     threshold: 0.1, 

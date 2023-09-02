@@ -6,6 +6,7 @@ import bars from '../../res/bars.gif';
 import left from '../../res/left-airpod.webp';
 import right from '../../res/right-airpod.webp';
 import tunnel from '../../res/tunnel.mp4';
+
 const Info = () => {
   const { ref, inView } = useInView({
     threshold: 0.1, 

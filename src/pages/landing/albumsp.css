@@ -18,6 +18,7 @@
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.3));
   animation: semi-circle-animation 190s linear infinite;
 }
+
 .moon2 {
   position: absolute;
   z-index: 0;

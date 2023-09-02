@@ -6,6 +6,7 @@ import { TRACK_POSTS, options } from '../../graphql/Queries';
 import useQueryPosts from '../../hooks/useQueryPosts';
 
 const Tracksp = () => {
+  
   const { posts, error} = useQueryPosts({query: TRACK_POSTS, main: true});
 
   if(error) return <h2>{error}</h2>
