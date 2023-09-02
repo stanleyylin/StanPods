@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.e47e39d1.css",
-    "main.js": "/static/js/main.ca913c6f.js",
+    "main.css": "/static/css/main.12ef7e2a.css",
+    "main.js": "/static/js/main.7f681c41.js",
     "static/media/tunnel.mp4": "/static/media/tunnel.f6576f342f58e9568700.mp4",
-    "static/media/header-bg.mp4": "/static/media/header-bg.808034c0830046f53518.mp4",
+    "static/media/headerbg.mp4": "/static/media/headerbg.808034c0830046f53518.mp4",
     "static/media/moon.png": "/static/media/moon.2ef1044e8ff7b6a0b2e4.png",
     "static/media/KoraTaki Regular.ttf": "/static/media/KoraTaki Regular.e13b3d3c2a2a38b012fe.ttf",
     "static/media/astronaut-full.webp": "/static/media/astronaut-full.58f366abc7a514aa33e1.webp",
@@ -20,11 +20,11 @@
     "static/media/left-airpod.webp": "/static/media/left-airpod.d97f074faf4b178188f2.webp",
     "static/media/linkedin.png": "/static/media/linkedin.ac689c2459a4b86a8566.png",
     "index.html": "/index.html",
-    "main.e47e39d1.css.map": "/static/css/main.e47e39d1.css.map",
-    "main.ca913c6f.js.map": "/static/js/main.ca913c6f.js.map"
+    "main.12ef7e2a.css.map": "/static/css/main.12ef7e2a.css.map",
+    "main.7f681c41.js.map": "/static/js/main.7f681c41.js.map"
   },
   "entrypoints": [
-    "static/css/main.e47e39d1.css",
-    "static/js/main.ca913c6f.js"
+    "static/css/main.12ef7e2a.css",
+    "static/js/main.7f681c41.js"
   ]
 }
