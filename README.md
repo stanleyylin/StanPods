@@ -10,3 +10,5 @@ https://stanpods.netlify.app/
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+
+I used React Router Dom for page routing, created my own custom hook to search for blog posts, and set up a store with React Context to handle state. I also used keyframes and React Intersection Observer for animations, as well as Photoshop and After Effects for some of the graphics. The website design was designed with Figma. 
